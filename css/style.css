@@ -12,11 +12,29 @@ body{
     min-height: 500px;
 }
 
+.logo__pick a{
+    transition: transform .9s ease;
+}
+
+.logo__pick:hover a{
+    transform: scale(1.5);
+    color:#fc6a42;
+}
+
 a{
     text-decoration: none;
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
     color:  #ffffff;
+}
+
+.menu__link a{
+    transition: color .5s ease;
+}
+
+.menu__link:hover a{
+ color: #4466c9;
+ text-decoration: underline;
 }
 
 ul,li{
@@ -59,6 +77,14 @@ ul,li{
     padding-left: 43px;
 }
 
+.social__pick img{
+    transition: transform .5s ease;
+}
+
+.social__pick:hover img{
+    transform: rotate(360deg);
+}
+
 /*header title goes below*/
 
 .header__title{
@@ -85,6 +111,12 @@ ul,li{
     border-radius: 5px;
 }
 
+.dl:hover{
+    color: #fc6a42;
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
 .ft{
     background-color:#4466c9;
     color:#ffffff;
@@ -93,6 +125,11 @@ ul,li{
     border: none;
     border-radius: 5px;
     margin-left: 12px;
+}
+
+.ft:hover{
+    background-color:#ffffff;
+    color: #4466c9;
 }
 
 /*section after header goes here*/
@@ -173,10 +210,12 @@ ul,li{
     height: 564px;
 }
 
-#polosa{
-    position: relative;
-    width: 910px;
-    border: 1px solid black;
+.slider__one{
+    transition: transform 1s ease;
+}
+
+.slider__one:hover{
+    transform: scale(1.2);
 }
 
 /*cloudy goes here*/
@@ -188,7 +227,18 @@ ul,li{
 .cloudy__phone{
     display: inline-block;
     float: left;
+    overflow: hidden;
 }
+
+.cloudy__phone img{
+    transform: scale(1);
+    transition: transform .3s ease-in;
+}
+
+.cloudy__phone:hover img{
+    transform: scale(1.1);
+}
+
 
 .cloudy__description{
     display: flex;
@@ -226,6 +276,16 @@ ul,li{
     display: inline-block;
     float: right;
     padding-right: 150px;
+    overflow: hidden;
+}
+
+.sun__phone img{
+    transform: scale(1);
+    transition: transform .3s ease-in;
+}
+
+.sun__phone:hover img{
+    transform: scale(1.1);
 }
 
 .sun__description{
@@ -263,6 +323,11 @@ ul,li{
     color: #353854;
     padding-top: 25px;
     padding-bottom: 30px;
+    transition: .3s ease-in;
+}
+
+.reviews__top__text:hover{
+    color: #5b81ec;
 }
 
 .reviews__top__autor{

@@ -17,22 +17,22 @@
                <div class = "header__menu"> 
                     <div class="logo">
                         <ul>
-                            <li><a href="#">FUN WEATHER.</a></li>
+                            <li class="logo__pick"><a href="#download">FUN WEATHER.</a></li>
                         </ul>
                     </div>
                     <div class ="menu">    
                         <ul>        
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Rewievs</a></li>
-                            <li><a href="#">Download</a></li>
+                            <li class="menu__link"><a href="#">Home</a></li>
+                            <li class="menu__link"><a href="#features">Features</a></li>
+                            <li class="menu__link"><a href="#reviews">Reviews</a></li>
+                            <li class="menu__link"><a href="#download">Download</a></li>
                         </ul>    
                     </div>  
                     <div class="social">
                         <ul>        
-                            <li><a href="#"><img src="img/fb.png" alt="facebook"></a></li>                   
-                            <li><a href="#"><img src="img/in.png" alt="instagram"></a></li>                    
-                            <li><a href="#"><img src="img/tw.png" alt="twitter"></a></li>     
+                            <li class="social__pick"><a href="#"><img src="img/fb.png" alt="facebook"></a></li>                   
+                            <li class="social__pick"><a href="#"><img src="img/in.png" alt="instagram"></a></li>                    
+                            <li class="social__pick"><a href="#"><img src="img/tw.png" alt="twitter"></a></li>     
                         </ul>  
                     </div>
                 </div>
@@ -55,7 +55,7 @@
     <div class="section">
         <div class="container">
             <div class="section__title">
-                <h2>Perfect features</h2>
+                <h2 id="features">Perfect features</h2>
             </div>
             <div class="section__text">
                 <p>Only necessary</p>
@@ -111,11 +111,9 @@
         <!--slider goes here-->
 
         <div id="slider">
-            <div id="polosa">
-                <img src="img/image_left.png" width="300" height="564">
-                <img src="img/image_center.png" width="300" height="564">
-                <img src="img/image_right.png" width="300" height="564">
-            </div>
+                <img src="img/image_left.png" width="300" height="564" class="slider__one">
+                <img src="img/image_center.png" width="300" height="564" class="slider__one">
+                <img src="img/image_right.png" width="300" height="564" class="slider__one">
         </div>
         <!--
         <button id="slider_left">left</button>
@@ -189,7 +187,7 @@
                         <div class = "people__description, simple__description">what people are saying</div>
                         <div class = "people__text, simple__text">Reviews</div>
                     </div>
-                    <div class = "reviwes">
+                    <div class = "reviwes" id="reviews">
                         <div class = "reviews__top">
                             <div class = "reviews__top__left">
                                 <img src="img/sticks_left.png" class="sticks_left">
@@ -234,7 +232,7 @@
                 </div>
 
                 
-                <div class = "info">
+                <div class = "info" id="download">
                     <div class='container'>
                     <div class = "info__header">How download the app?</div>
                     <div class ="info__text">Just download the app from the store.<br>
@@ -253,7 +251,7 @@
 
                 <footer>
                   <div class = "container">
-                  <div class = 'footer__top'>      
+                  <div class = "footer__top">      
                     <div class="footer__logo">
                         <ul>
                             <li><a href="#"><span>FUN</span> WEATHER.</a></li>
@@ -261,17 +259,17 @@
                     </div>
                     <div class ="menu footer__menu">    
                         <ul>        
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Rewievs</a></li>
-                            <li><a href="#">Download</a></li>
+                            <li class="menu__link"><a href="#">Home</a></li>
+                            <li class="menu__link"><a href="#features">Features</a></li>
+                            <li class="menu__link"><a href="#reviews">Reviews</a></li>
+                            <li class="menu__link"><a href="#download">Download</a></li>
                         </ul>    
                     </div>
                     <div class="social">
                             <ul>        
-                                <li><a href="#"><img src="img/fb.png" alt="facebook"></a></li>                   
-                                <li><a href="#"><img src="img/in.png" alt="instagram"></a></li>                    
-                                <li><a href="#"><img src="img/tw.png" alt="twitter"></a></li>     
+                                <li class="social__pick"><a href="#"><img src="img/fb.png" alt="facebook"></a></li>                   
+                                <li class="social__pick"><a href="#"><img src="img/in.png" alt="instagram"></a></li>                    
+                                <li class="social__pick"><a href="#"><img src="img/tw.png" alt="twitter"></a></li>     
                             </ul>  
                     </div>  
                     </div>
@@ -288,15 +286,7 @@
 
     </div>
     <script>
-   /*     document.getElementById('slider_left').onclick = sliderLeft;
-        var left = 0;
 
-        function sliderLeft(){
-            var polosa = document.getElementById('polosa');
-            left = left - 128;
-            polosa.style.left = left + 'px';
-        }
-    */ 
     </script>
 </body>
 </html>
